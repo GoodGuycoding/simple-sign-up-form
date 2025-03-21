@@ -1,6 +1,6 @@
 export default function SignUp() {
   return (
-    <div className="App">
+    <div className="SignUp">
       <h1>SIGN UP</h1>
     </div>
   );
