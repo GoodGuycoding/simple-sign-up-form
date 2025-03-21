@@ -2,7 +2,10 @@ import { useState } from "react";
 
 export default function SignUp() {
   const [email, setEmail] = useState("");
+
   const [password, setPassword] = useState("");
+
+  function handleSubmitForm() {}
   return (
     <div className="SignUp">
       <form style={{ display: "flex", flexDirection: "column" }}>
@@ -22,7 +25,9 @@ export default function SignUp() {
             setPassword(e.target.value);
           }}
         ></input>
-        <button className="submitBtn">Submit</button>
+        <button className="submitBtn" onClick={handleSubmitForm}>
+          Submit
+        </button>
       </form>
     </div>
   );
