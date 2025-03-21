@@ -5,7 +5,10 @@ export default function SignUp() {
 
   const [password, setPassword] = useState("");
 
-  function handleSubmitForm() {}
+  function handleSubmitForm(event) {
+    event.preventDefault();
+    console.log(email);
+  }
   return (
     <div className="SignUp">
       <form style={{ display: "flex", flexDirection: "column" }}>
